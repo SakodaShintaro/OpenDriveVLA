@@ -2,6 +2,10 @@
 
 応答は日本語でお願いします。
 
+Pythonについて実装した後はRuffのチェックを入れてください。
+
+try exceptはできるだけ使わないでください。
+
 当面の目標 : CARLA Leaderboard2.1 でOpenDriveVLAを評価する。
 
 重要なパス

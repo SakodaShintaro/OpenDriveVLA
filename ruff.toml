@@ -1,0 +1,42 @@
+# Ruff configuration for OpenDriveVLA
+
+# Python version
+target-version = "py310"
+
+# Line length
+line-length = 120
+
+# Linting rules
+[lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "N",   # pep8-naming
+    "UP",  # pyupgrade
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+]
+
+ignore = [
+    "E501",  # line too long (handled by formatter)
+    "B008",  # do not perform function call in argument defaults
+]
+
+# Exclude directories
+exclude = [
+    ".git",
+    ".venv",
+    "__pycache__",
+    "build",
+    "dist",
+    "third_party",
+    "*.egg-info",
+]
+
+# Formatting
+[format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
